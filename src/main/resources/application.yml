@@ -1,0 +1,12 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: heyu
+  cloud:
+    consul:
+      discovery:
+        register: true
+        service-name: producer
+      host: localhost
+      port: 8500
